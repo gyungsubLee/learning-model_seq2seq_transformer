@@ -9,3 +9,4 @@
 ## 문서
 
 - [Seq2Seq with Attention 모델 상세 설명](docs/SEQ2SEQ_EXPLANATION.md)
+- [Transformer 모델 완전 정복 (Seq2Seq 비교 포함)](docs/TRANSFORMER_EXPLANATION.md)
