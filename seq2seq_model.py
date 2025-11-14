@@ -78,6 +78,7 @@ class BahdanauAttention(nn.Module):
         self.Va = nn.Linear(hidden_size, 1)
 
     def forward(self, query, keys):
+        # 덧셈 attention 메커니즘 ( 일반적으로 '내적'을 많이 사용하지만, 다른 케이스를 학습을 위해 덧셈 방식 사용 )
         scores = self.Va(torch.tanh(self.Wa(query) + self.Ua(keys)))
         scores = scores.squeeze(2).unsqueeze(1)
 

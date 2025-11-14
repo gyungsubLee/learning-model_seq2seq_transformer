@@ -146,7 +146,7 @@ def evaluateRandomly(encoder, decoder, n=10):
 
 if __name__ == '__main__':
     # Training and Evaluating
-    hidden_size = 128
+    hidden_size = 128 # hidden state 크기 128 차원으로 설정
     batch_size = 32
     n_epochs = 200
     target_lang = 'kor'
